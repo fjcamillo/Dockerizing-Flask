@@ -1,7 +1,7 @@
-from ubuntu:latest
+FROM ubuntu:16.04
 
-RUN apt-get install update \
-  && apt-get install python3 python3-dev python3-pip
+RUN apt-get update
+RUN apt-get install -y python3-pip
 
 WORKDIR /app
 COPY . .
