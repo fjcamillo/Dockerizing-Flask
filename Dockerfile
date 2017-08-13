@@ -1,7 +1,7 @@
 from ubuntu:latest
 
 RUN apt-get install update \
-  apt-get install python3 python3-dev python3-pip
+  && apt-get install python3 python3-dev python3-pip
 
 WORKDIR /app
 COPY . .
