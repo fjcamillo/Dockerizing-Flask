@@ -7,5 +7,5 @@ from app import app
 @app.route('/')
 def index():
     return jsonify({
-        'test': test
+        'test': 'test'
     })
