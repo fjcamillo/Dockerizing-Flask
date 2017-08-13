@@ -7,7 +7,7 @@ WORKDIR /app
 COPY . .
 ENV LC_ALL=C.UTF-8
 ENV LANG=C.UTF-8
-ENV FLASP_APP=flask run
+ENV FLASP_APP=run.py
 RUN pip3 install --upgrade pip
 RUN pip install -r requirements.txt
 RUN chmod a+x run.py
