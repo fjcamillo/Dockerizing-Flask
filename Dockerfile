@@ -12,4 +12,4 @@ RUN pip3 install --upgrade pip
 RUN pip install -r requirements.txt
 RUN chmod a+x run.py
 EXPOSE 5000
-CMD flask run
+CMD flask run --host=0.0.0.0
